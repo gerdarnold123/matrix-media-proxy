@@ -1,0 +1,13 @@
+app = "matrix-media-proxy"
+
+[build]
+  image = "node:20-alpine"
+
+[env]
+  NODE_ENV = "production"
+
+[experimental]
+  auto_rollback = true
+
+[deploy]
+  release_command = "npm install"
